@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afternoon Exercise</title>
+   
+    <link rel="stylesheet" href="webpage.css">
+    <script defer src="webpage.js"></script>
+</head>
+<body>
+    <h1>🌴 Aloha Restaurant</h1>
+    <h2>Booking Form</h2>
+    <div class="form-container">
+    <form>
+        <label for="greeting">How would you like to be greeted?<br>e.g. Aloha, hi, what's up</label><br>
+        <input type="text" id="greeting" placeholder="Ciao"><br>
+        <label name="event">What is your event for?</label><br>
+        <div class="radioButtons">
+        <input type="radio" id="birthday" name="event" checked>
+        <label for="birthday">Birthday</label><br>
+        <input type="radio" id="anniversary" name="event" >
+        <label for="anniversary">Anniversary</label><br>
+        <input type="radio" id="graduation" name="event">
+        <label for="graduation">Graduation</label><br>
+    </div>
+        <label for="message">Additional message:</label>
+        <input type="text" id="message" placeholder="Request"><br>
+
+        <input class="button"type="submit" value="Submit">
+    </form>
+</div>
+    <div id="cardContainer">
+        <h2 id="card">Thank you for booking!</h2>
+        <button type="button" class="button" id="refreshAloha">Make another reservation!</button><br>
+        <a href="#" id="imageLink">
+            <img alt="birthday" id="unsplashImage"/>
+       </a>
+    <p class="creator">Photo by a <a id="creator" href="#">NAME</a> on <a href="https://www.unsplash.com">Unsplash</a></p>
+   
+    </div>
+
+
+  
+</body>
+</html>
