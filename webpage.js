@@ -13,6 +13,8 @@ function processReservation(event) {
     card.style.padding = "20px 10px";
     card.style.borderRadius = "5px";
     card.style.textAlign = "center";
+    //checkEvent();
+    
 }
 
 //button refreshes window 
@@ -23,8 +25,12 @@ function refreshPage(){
 }
 
 //unsplash
+
+
+
 let clientID = "IZ6WkcQ5Ygefq4jWnmtc7THx2RcKzQaTnzbEpTp_dOw";
 let endpoint = `https://api.unsplash.com/photos/random/?client_id=${clientID}`;
+//let endpoint = `https://api.unsplash.com/search/photos/?client_id=${clientID}`;
 
 let imageElement = document.querySelector('#unsplashImage');
 let imageLink = document.querySelector('#imageLink');
@@ -39,3 +45,9 @@ fetch(endpoint)
         creator.setAttribute("href", jsonData.user.portfolio_url);
     }) 
 
+function checkEvent() {
+    if (document.getElementById("birthday").checked) {
+        //alert("aloha happy birthday");
+        let birthdayEndpoint = `https://api.unsplash.com/photos/topics/wallpapers/?client_id=${clientID}`;
+    }
+}
